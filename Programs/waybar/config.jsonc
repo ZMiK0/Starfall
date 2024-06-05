@@ -1,0 +1,85 @@
+{
+  "name": "sidebar",
+  "layer": "top",
+  "position": "left",
+  "gtk-layer-shell": true,
+  "height": 1048,
+  "width": 14,
+  "margin-bottom": 2,
+  "margin-left": 14,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["hyprland/window","pulseaudio#sink","backlight","power-profiles-daemon","battery","tray"],
+  "hyprland/window": {
+    "format": "{}",
+    "rotate": 90
+  },
+
+  "hyprland/workspaces": {
+    "disable-scroll": false,
+    "all-outputs": true,
+    "on-click": "activate"
+  },
+
+  "clock": {
+    "format": "{:%H\n%M}",
+    "tooltip": false,
+    "tooltip-format": "{: %A, %B %e %Y}",
+    "timezone": "Europe/Madrid",
+    "on-click": "pkill wofi; wofi"
+},
+
+  "pulseaudio#sink": {
+    "format": "{icon}",
+    "format-muted": "",
+    "format-bluetooth": "{icon}",
+    "format-icons": {
+      "headphones": ["", "", ""],
+      "headset": ["", "", ""],
+      "default": ["", "", ""]
+    },
+    "tooltip": true,
+    "tooltip-format": "{volume}%",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "/usr/bin/pavucontrol",
+    "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +1%",
+    "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -1%"
+  },
+
+  "backlight": {
+    "format": "{icon}",
+    "format-icons": ["󰃞", "󰃟", "󰃠"],
+    "tooltip": true,
+    "tooltip-format": "{percent}%"
+  },
+
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip": true,
+    "tooltip-format": "Modo: {profile}",
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
+  },
+  
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 20,
+      "critical": 10
+    },
+    "format": "{icon}",
+    "format-charging": "",
+    "format-plugged": "",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 5
+  }
+
+}
