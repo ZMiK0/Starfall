@@ -10,7 +10,7 @@ These are my hyprland(arch) dotfiles.
 - wlogout
 - grim, slurp, swappy
 - swaylock-effects
-- swaylock-idle
+- swayidle
 - [synth-shell](https://github.com/andresgongora/synth-shell)
 - ***Gnome46 required for some configs to work***
 > Gtk theme & icons: Colloid Dark (Purple version for icons)
