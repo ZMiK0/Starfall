@@ -22,3 +22,5 @@ These are my hyprland(arch) dotfiles.
 ![](./media/hy.png)
 ![](./media/nvi.png)
 ![](./media/cr.png)
+#### Waybar Update:
+![](./media/waybarU.png)
