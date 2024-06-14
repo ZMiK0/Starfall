@@ -9,6 +9,7 @@ These are my hyprland(arch) dotfiles.
 - wofi
 - wlogout
 - grim, slurp, swappy
+- swaync
 - swaylock-effects
 - swaylock-idle
 - [synth-shell](https://github.com/andresgongora/synth-shell)

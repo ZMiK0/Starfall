@@ -7,9 +7,9 @@
   "width": 14,
   "margin-bottom": 2,
   "margin-left": 14,
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["clock"],
-  "modules-right": ["hyprland/window","pulseaudio#sink","backlight","power-profiles-daemon","battery","tray"],
+  "modules-left": ["clock","hyprland/workspaces"],
+  "modules-center": ["custom/launch","custom/chrome","custom/file","custom/terminal","custom/vscode","custom/toolbox","custom/discord"],
+  "modules-right": ["pulseaudio#sink","backlight","power-profiles-daemon","battery","tray","custom/notificationCenter","custom/lock","custom/poweroff"],
   "hyprland/window": {
     "format": "{}",
     "rotate": 90
@@ -25,8 +25,7 @@
     "format": "{:%H\n%M}",
     "tooltip": false,
     "tooltip-format": "{: %A, %B %e %Y}",
-    "timezone": "Europe/Madrid",
-    "on-click": "pkill wofi; wofi"
+    "timezone": "Europe/Madrid"
 },
 
   "pulseaudio#sink": {
@@ -71,15 +70,76 @@
       "warning": 20,
       "critical": 10
     },
+    "tooltip-format": "{capacity}%",
     "format": "{icon}",
     "format-charging": "",
     "format-plugged": "",
-    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    "format-icons": ["", "", "", "", ""]
   },
 
   "tray": {
     "icon-size": 18,
     "spacing": 5
+  },
+
+  "custom/notificationCenter": {
+    "on-click": "swaync-client -t -sw",
+    "format": "",
+    "tooltip": false
+  },
+
+  "custom/lock": {
+    "on-click": "swaylock",
+    "format": "",
+    "tooltip": false
+  },
+
+  "custom/poweroff": {
+    "on-click": "~/.config/hypr/wlogoutblur.sh",
+    "format": "⏻",
+    "tooltip": false
+  },
+
+  "custom/launch": {
+    "on-click": "pkill wofi; wofi",
+    "format": "",
+    "tooltip": false
+  },
+
+  "custom/chrome": {
+    "on-click": "google-chrome-stable",
+    "format": "",
+    "tooltip": false
+  },
+
+  "custom/file": {
+    "on-click": "nautilus",
+    "format": "",
+    "tooltip": false
+  },
+
+  "custom/terminal": {
+    "on-click": "kitty",
+    "format": "",
+    "tooltip": false
+  },
+
+  "custom/discord": {
+    "on-click": "flatpak run com.discordapp.Discord",
+    "format": "",
+    "tooltip": false
+  },
+
+  "custom/vscode": {
+    "on-click": "code",
+    "format": "󰨞",
+    "tooltip": false
+  },
+
+  "custom/toolbox": {
+    "on-click": "jetbrains-toolbox",
+    "format": "",
+    "tooltip": false
   }
 
 }

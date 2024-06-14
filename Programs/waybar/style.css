@@ -43,12 +43,52 @@ tooltip {
     background: #9e1616;
 }
 
+#custom-discord, #power-profiles-daemon {
+    margin-right: 5px;
+}
+
+#backlight, #battery, #pulseaudio {
+    margin-right: 3px;
+}
+
+#battery, #tray {
+    margin-bottom: 10px;
+}
+
+#battery.warning {
+    color: rgb(255, 225, 91);
+}
+
+#battery.critical {
+    color: rgb(202, 0, 0);
+}
+
+#tray {
+    margin-left: 3px;
+}
+
+#custom-chrome,
+#custom-file,
+#custom-terminal,
+#custom-vscode,
+#custom-toolbox,
+#custom-discord {
+    padding-top: 6px;
+}
+
+
 #pulseaudio,
 #backlight,
 #power-profiles-daemon,
 #battery,
 #clock,
 #tray {
-    padding: 10px;
+    padding: 5px;
     opacity: 1;
+}
+
+#custom-lock,
+#custom-poweroff,
+#custom-notificationCenter {
+    padding-bottom: 15px;
 }
