@@ -47,7 +47,7 @@ tooltip {
     margin-right: 5px;
 }
 
-#backlight, #battery, #pulseaudio {
+#backlight, #battery, #pulseaudio, #custom-obsidian {
     margin-right: 3px;
 }
 
@@ -72,7 +72,8 @@ tooltip {
 #custom-terminal,
 #custom-vscode,
 #custom-toolbox,
-#custom-discord {
+#custom-discord,
+#custom-obsidian {
     padding-top: 6px;
 }
 
@@ -91,4 +92,32 @@ tooltip {
 #custom-poweroff,
 #custom-notificationCenter {
     padding-bottom: 15px;
+}
+
+#custom-chrome {
+    color: rgb(255, 106, 106);
+}
+
+#custom-file {
+    color: rgb(226, 18, 164);
+}
+
+#custom-terminal {
+    color: rgb(88, 255, 66);
+}
+
+#custom-vscode {
+    color: rgb(18, 161, 204);
+}
+
+#custom-toolbox {
+    color: rgb(218, 33, 33);
+}
+
+#custom-discord {
+    color: rgb(48, 89, 223);
+}
+
+#custom-obsidian {
+    color: rgb(170, 21, 170);
 }

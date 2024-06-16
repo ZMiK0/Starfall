@@ -8,7 +8,7 @@
   "margin-bottom": 2,
   "margin-left": 14,
   "modules-left": ["clock","hyprland/workspaces"],
-  "modules-center": ["custom/launch","custom/chrome","custom/file","custom/terminal","custom/vscode","custom/toolbox","custom/discord"],
+  "modules-center": ["custom/launch","custom/chrome","custom/file","custom/terminal","custom/vscode","custom/toolbox","custom/discord","custom/obsidian"],
   "modules-right": ["pulseaudio#sink","backlight","power-profiles-daemon","battery","tray","custom/notificationCenter","custom/lock","custom/poweroff"],
   "hyprland/window": {
     "format": "{}",
@@ -139,6 +139,12 @@
   "custom/toolbox": {
     "on-click": "jetbrains-toolbox",
     "format": "",
+    "tooltip": false
+  },
+
+  "custom/obsidian": {
+    "on-click": "obsidian",
+    "format": "",
     "tooltip": false
   }
 
